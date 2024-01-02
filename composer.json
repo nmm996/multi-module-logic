@@ -1,0 +1,19 @@
+{
+    "name": "riario/logic",
+    "description": "description",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Riario\\Logic\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nurmuhammad9619",
+            "email": "webdeveloper9619@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^8.19"
+    }
+}
