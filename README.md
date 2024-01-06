@@ -10,4 +10,4 @@ Test
 You can install the package via Composer:
 
 ```bash
-composer require 
+composer require riario/logic
