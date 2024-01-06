@@ -17,5 +17,6 @@
             "email": "webdeveloper9619@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
