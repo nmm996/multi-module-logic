@@ -10,11 +10,6 @@
             "Riario\\Logic\\": "src/"
         }
     },
-    "autoload-dev": {
-        "psr-4": {
-            "Riario\\Logic\\Tests\\": "tests/"
-        }
-    },
     "authors": [
         {
             "name": "nmm996",
@@ -22,7 +17,5 @@
         }
     ],
     "require-dev": {
-        "orchestra/testbench": "^8.19",
-        "phpunit/phpunit": "^10.5"
     }
 }
