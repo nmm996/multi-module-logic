@@ -1,6 +1,7 @@
 {
     "name": "riario/logic",
     "description": "description",
+    "version": "0.0.1",
     "license": "MIT",
     "type": "library",
     "require": {
