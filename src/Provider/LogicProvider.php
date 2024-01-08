@@ -59,6 +59,6 @@ class LogicProvider extends ServiceProvider
         $configPath = __DIR__ . '/../Config/logic.php';
         $this->publishes([
             $configPath => config_path('logic.php'),
-        ], 'config');
+        ], 'logic-config');
     }
 }
