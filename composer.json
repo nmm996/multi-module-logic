@@ -15,7 +15,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Riario\\Logic\\ServiceProvider"
+                "Riario\\Logic\\Provider\\ServiceProvider"
             ]
         }
     },
