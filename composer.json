@@ -12,6 +12,13 @@
             "Riario\\Logic\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riario\\Logic\\ServiceProvider"
+            ]
+        }
+    },
     "authors": [
         {
             "name": "nmm996",
