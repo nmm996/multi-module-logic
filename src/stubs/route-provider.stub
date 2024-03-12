@@ -4,8 +4,6 @@ namespace $NAMESPACE$;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
-use Stancl\Tenancy\Middleware\InitializeTenancyByDomain;
-use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
 
 class $CLASS$ extends ServiceProvider
 {
@@ -41,10 +39,7 @@ class $CLASS$ extends ServiceProvider
     protected function mapApiRoutes()
     {
         Route::prefix('api')
-            ->middleware('api',
-                InitializeTenancyByDomain::class,
-                PreventAccessFromCentralDomains::class,
-            )
+            ->middleware('api')
             ->group(base_path('Logic') . DIRECTORY_SEPARATOR .'$MODULE$'. DIRECTORY_SEPARATOR .'$API_ROUTES_PATH$');
     }
 }
