@@ -3,7 +3,6 @@
 namespace Riario\Logic\Provider;
 
 use Illuminate\Support\ServiceProvider;
-use Logic\Price\Providers\PriceServiceProvider;
 
 class LogicProvider extends ServiceProvider
 {
@@ -28,14 +27,14 @@ class LogicProvider extends ServiceProvider
     /**
      * Register providers.
      */
-    protected function registerProviders()
+    protected function registerProviders(): void
     {
         $this->app->register(ConsoleServiceProvider::class);
     }
     /**
-     * {@inheritdoc}
+     * Register services
      */
-    protected function registerServices()
+    protected function registerServices(): void
     {
         $this->app->singleton(\Riario\Logic\Contracts\LogicInterface::class, function ($app) {
             $path = $app['config']->get('logic.paths.logic');
@@ -47,14 +46,14 @@ class LogicProvider extends ServiceProvider
     /**
      * Register all modules.
      */
-    protected function registerLogics()
+    protected function registerLogics(): void
     {
         $this->app->register(BootstrapServiceProvider::class);
     }
     /**
      * Register package's namespaces.
      */
-    protected function registerNamespaces()
+    protected function registerNamespaces(): void
     {
         $configPath = __DIR__ . '/../Config/logic.php';
         $this->publishes([

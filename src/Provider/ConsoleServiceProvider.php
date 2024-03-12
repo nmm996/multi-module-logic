@@ -11,7 +11,7 @@ class ConsoleServiceProvider extends ServiceProvider
      * The available commands
      * @var array
      */
-    protected $commands = [
+    protected array $commands = [
         Commands\MakeLogicCommand::class,
         Commands\ProviderMakeCommand::class,
         Commands\RouteProviderCommand::class
